@@ -31,9 +31,18 @@
   <p>With the owner's explicit authorization through Intuit's OAuth flow, the app
   reads the owner's own <strong>QuickBooks Online</strong> accounting data —
   such as company details, account balances, and financial reports (e.g. profit
-  &amp; loss, balance sheet). Access is <strong>read-only</strong>; the app does
-  not create, modify, or delete QuickBooks data. The app requests only the
-  accounting scope (<code>com.intuit.quickbooks.accounting</code>).</p>
+  &amp; loss, balance sheet). The app requests only the accounting scope
+  (<code>com.intuit.quickbooks.accounting</code>).</p>
+
+  <h2>Creating and updating records (with confirmation)</h2>
+  <p>The app can create and update accounting records (for example invoices,
+  customers, and transaction categorizations) — but <strong>only after the owner
+  explicitly confirms each specific change.</strong> A built-in gate blocks every
+  write until the owner approves that exact action; nothing is written
+  automatically, in batches, or unattended. The following are
+  <strong>hard-blocked</strong> and cannot be performed by the app under any
+  circumstances: <strong>moving or committing money</strong> (payments, transfers,
+  bill payments, deposits, refunds) and <strong>deleting</strong> records.</p>
 
   <h2>How data is stored</h2>
   <ul>
@@ -50,8 +59,8 @@
   owner's questions, the app may process retrieved data using its AI provider
   (<a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic's
   Claude</a>) under that provider's terms, solely to generate the owner's own
-  results. No data is used for advertising, resale, or disclosure to any other
-  party.</p>
+  results. No data is used for advertising, resale, disclosure to any other
+  party, <strong>or to train AI models</strong>.</p>
 
   <h2>Data retention &amp; deletion</h2>
   <p>The owner can revoke the app's access to QuickBooks at any time (see
