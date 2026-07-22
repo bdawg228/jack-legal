@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jack — private business assistant</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.6; color:#1a1a1a; background:#fafafa; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 24px 72px; }
+  header { border-bottom:1px solid #e5e5e5; padding-bottom:24px; margin-bottom:32px; }
+  h1 { font-size:2rem; margin:0 0 8px; }
+  .tag { color:#666; font-size:1.05rem; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  a { color:#0a58ca; }
+  ul { padding-left:1.25rem; }
+  .card { background:#fff; border:1px solid #e5e5e5; border-radius:10px; padding:20px 24px; margin:20px 0; }
+  footer { margin-top:48px; padding-top:24px; border-top:1px solid #e5e5e5; color:#777; font-size:.9rem; }
+  nav a { margin-right:18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Jack</h1>
+    <div class="tag">A private, internal business assistant — run locally by its owner.</div>
+  </header>
+
+  <p>Jack is a personal tool the owner runs on their own computer to help manage
+  their own small businesses. With the owner's permission, Jack can read the
+  owner's own <strong>QuickBooks Online</strong> accounting data to answer
+  questions like “what's our cash position?” or “show this month's P&amp;L.”</p>
+
+  <div class="card">
+    <h2>What it is</h2>
+    <ul>
+      <li><strong>Private &amp; internal.</strong> Used only by the owner, for the owner's own companies. Not sold, listed, or offered to other users.</li>
+      <li><strong>Read-only.</strong> Jack reads accounting data to report on it. It does not create, edit, or delete anything in QuickBooks.</li>
+      <li><strong>Local.</strong> It runs on the owner's own machine. Authorization tokens are stored locally on that machine.</li>
+    </ul>
+  </div>
+
+  <h2>Connecting &amp; disconnecting QuickBooks</h2>
+  <p>Access is granted by the owner through Intuit's standard OAuth flow and can
+  be revoked at any time. See the <a href="disconnect.html">Disconnect page</a>.</p>
+
+  <nav style="margin-top:32px">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="eula.html">EULA</a>
+    <a href="disconnect.html">Disconnect</a>
+  </nav>
+
+  <footer>
+    Operated by its owner. Contact: <a href="mailto:brendan@artjakes.com">brendan@artjakes.com</a>.<br>
+    Last updated: July 21, 2026.
+  </footer>
+</div>
+</body>
+</html>

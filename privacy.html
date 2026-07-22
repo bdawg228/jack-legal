@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Jack</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.6; color:#1a1a1a; background:#fafafa; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 24px 72px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:28px 0 6px; }
+  .updated { color:#666; margin-bottom:24px; }
+  a { color:#0a58ca; }
+  ul { padding-left:1.25rem; }
+  footer { margin-top:40px; padding-top:20px; border-top:1px solid #e5e5e5; color:#777; font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Jack &middot; Last updated July 21, 2026</div>
+
+  <p>Jack (“the app”) is a private, internal tool operated by its owner (“we,”
+  “us”) for the owner's own businesses. This policy explains what data the app
+  handles and how. There are no other users: the app is not offered to the
+  public and is not sold or listed.</p>
+
+  <h2>What data the app accesses</h2>
+  <p>With the owner's explicit authorization through Intuit's OAuth flow, the app
+  reads the owner's own <strong>QuickBooks Online</strong> accounting data —
+  such as company details, account balances, and financial reports (e.g. profit
+  &amp; loss, balance sheet). Access is <strong>read-only</strong>; the app does
+  not create, modify, or delete QuickBooks data. The app requests only the
+  accounting scope (<code>com.intuit.quickbooks.accounting</code>).</p>
+
+  <h2>How data is stored</h2>
+  <ul>
+    <li>The app runs locally on the owner's own computer.</li>
+    <li>OAuth tokens (used to reconnect to QuickBooks) are stored locally on that
+        computer with restricted file permissions.</li>
+    <li>Financial data is retrieved on demand to answer the owner's questions and
+        is not warehoused in a database or retained beyond the session.</li>
+  </ul>
+
+  <h2>Who data is shared with</h2>
+  <p>The app does <strong>not</strong> sell, rent, or share QuickBooks data with
+  any third party, and there are no other users to share it with. To answer the
+  owner's questions, the app may process retrieved data using its AI provider
+  (<a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic's
+  Claude</a>) under that provider's terms, solely to generate the owner's own
+  results. No data is used for advertising, resale, or disclosure to any other
+  party.</p>
+
+  <h2>Data retention &amp; deletion</h2>
+  <p>The owner can revoke the app's access to QuickBooks at any time (see
+  <a href="disconnect.html">Disconnect</a>), which invalidates the stored tokens.
+  Deleting the local token files removes the app's ability to reconnect. Because
+  data is not warehoused, there is no server-side store to purge.</p>
+
+  <h2>Security</h2>
+  <p>Access uses Intuit's standard OAuth 2.0. Tokens are kept on the owner's
+  machine at restricted permissions and are not transmitted to any third-party
+  server operated by us (we operate none).</p>
+
+  <h2>Children's privacy</h2>
+  <p>The app is a private business tool and is not directed to children.</p>
+
+  <h2>Changes</h2>
+  <p>Updates to this policy will be posted on this page with a new “last updated”
+  date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:brendan@artjakes.com">brendan@artjakes.com</a>.</p>
+
+  <footer><a href="index.html">← Back to Jack</a> &middot; <a href="eula.html">EULA</a></footer>
+</div>
+</body>
+</html>

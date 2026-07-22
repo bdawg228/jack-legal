@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disconnect — Jack</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.6; color:#1a1a1a; background:#fafafa; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 24px 72px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:28px 0 6px; }
+  .updated { color:#666; margin-bottom:24px; }
+  a { color:#0a58ca; }
+  code { background:#eee; padding:1px 5px; border-radius:4px; font-size:.95em; }
+  ol { padding-left:1.25rem; }
+  footer { margin-top:40px; padding-top:20px; border-top:1px solid #e5e5e5; color:#777; font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Connect &amp; disconnect</h1>
+  <div class="updated">Jack &middot; Last updated July 21, 2026</div>
+
+  <h2>Connecting</h2>
+  <p>The owner connects a QuickBooks Online company by authorizing it through
+  Intuit's standard OAuth consent screen. Access is granted per company and is
+  read-only.</p>
+
+  <h2>Disconnecting / revoking access</h2>
+  <p>Access can be revoked at any time, either side:</p>
+  <ol>
+    <li><strong>From Intuit (recommended):</strong> sign in to QuickBooks Online →
+      <em>Settings ⚙ → Apps</em> (or <a href="https://accounts.intuit.com" rel="noopener">account settings</a> → Connected apps) →
+      find this app → <strong>Disconnect</strong>. This immediately revokes the
+      app's tokens for that company.</li>
+    <li><strong>From the owner's computer:</strong> remove the local connector and
+      its stored token, e.g. <code>claude mcp remove qbo-&lt;company&gt;</code> and
+      delete the company's local token file. This removes the app's ability to
+      reconnect.</li>
+  </ol>
+  <p>Because the app stores nothing on any external server, revoking access and
+  deleting the local token fully disconnects it.</p>
+
+  <footer><a href="index.html">← Back to Jack</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>
